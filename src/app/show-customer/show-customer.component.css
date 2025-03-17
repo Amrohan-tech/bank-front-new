@@ -1,0 +1,86 @@
+/* Center the customer list */
+ul {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    list-style: none;
+}
+
+/* Style each customer item */
+.customer-item {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Horizontal line after each customer */
+.customer-item:not(:last-child) {
+    border-bottom: 2px solid #007bff; /* Blue separator line */
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+/* Style the customer ID and details */
+b {
+    color: #004085;
+}
+
+/* Buttons container */
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* General button styling */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+/* Update Button */
+.update-btn {
+    background: #ffc107;
+    color: black;
+}
+
+.update-btn:hover {
+    background: #e0a800;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    ul {
+        max-width: 90%;
+    }
+    
+    .button-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        display: block;
+        margin: 5px 0;
+    }
+}

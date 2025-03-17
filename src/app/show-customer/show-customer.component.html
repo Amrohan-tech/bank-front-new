@@ -1,0 +1,15 @@
+<ul>
+    @for(cust of showCustomers; track cust.id) {
+        <div class="customer-item">
+            <li><b>Customer ID :</b> {{cust.id}}</li>
+            <li><b>Customer Firstname :</b> {{cust.firstname}}</li>
+            <li><b>Customer Lastname :</b> {{cust.lastname}}</li>
+            <li><b>Customer Age :</b> {{cust.age}}</li>
+            <li><b>Customer Mobile Number :</b> {{cust.mobile}}</li>
+            <div class="button-container">
+                <button class="update-btn">Update Customer</button>
+                <button class="delete-btn" (click)="deleteCustomer(cust.id)">Delete</button>
+            </div>
+        </div>
+    }
+</ul>
