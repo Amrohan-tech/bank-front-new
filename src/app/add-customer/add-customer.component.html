@@ -1,3 +1,5 @@
+<p id="showMessage">{{showMessage}}</p>
+
 <form #customerForm="ngForm" (ngSubmit)="addCustomer(customerForm.value)">
     <input type="text" name="firstname" ngModel placeholder="First Name" required>
     <input type="text" name="lastname" ngModel placeholder="Last Name" required>

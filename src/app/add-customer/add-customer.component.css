@@ -62,3 +62,12 @@ body {
     background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
     font-family: Arial, sans-serif;
 }
+/* Center the message */
+#showMessage {
+    color: #28a745; /* Green color */
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+

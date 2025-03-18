@@ -84,3 +84,67 @@ button {
         margin: 5px 0;
     }
 }
+/* Centering the form */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+/* Styling the form container */
+#update {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    overflow-x: auto; /* Ensures responsiveness */
+}
+
+/* Input fields */
+#update input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+    width: 180px; /* Adjust width as needed */
+}
+
+/* Highlight input focus */
+#update input:focus {
+    border-color: #007bff;
+}
+
+/* Button styles */
+.update-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    white-space: nowrap; /* Prevents button text from wrapping */
+}
+
+/* Button hover effect */
+.update-btn:hover {
+    background: #0056b3;
+}
+#showMessage {
+    color: #28a745; /* Green color */
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+

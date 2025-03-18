@@ -9,12 +9,16 @@ import { BankService } from '../Services/bank.service';
   styleUrl: './add-customer.component.css'
 })
 export class AddCustomerComponent {
+  showMessage:any;
   constructor(private customerservice:BankService){
   }
   addCustomer(data:any){
     console.log(data);
     this.customerservice.addCustomer(data).subscribe((result)=>{
       console.log(result);
+      if(result){
+        this.showMessage="customer added successfully";
+      }
       
     })
   }

@@ -17,4 +17,10 @@ export class BankService {
   deleteCustomer(id:any){
     return this.http.delete(`http://127.0.0.1:8000/api/customers/${id}`);
   }
+  selectCustomer(id:any){
+    return this.http.get('http://127.0.0.1:8000/api/customers/'+id);
+  }
+  updateCustomer(id:any,data:any){
+    return this.http.put('http://127.0.0.1:8000/api/customers/'+id,data);
+  }
 }

@@ -1,3 +1,13 @@
+<p id="showMessage">{{showMessage}}</p>
+<div id="update">
+    <form #selectFormData="ngForm" (ngSubmit)="updateCustomer(getSelectedData?.id,selectFormData.value)">
+        <input type="text" name="firstname" [ngModel]="getSelectedData?.firstname" placeholder="First Name"  required>
+    <input type="text" name="lastname" [ngModel]="getSelectedData?.lastname" placeholder="Last Name" required>
+    <input type="number" name="age" [ngModel]="getSelectedData?.age" placeholder="Age" required>
+    <input type="text" name="mobile" [ngModel]="getSelectedData?.mobile" placeholder="Mobile Number" required>
+    <button class="update-btn" >Update Customer</button>
+    </form>
+</div>
 <ul>
     @for(cust of showCustomers; track cust.id) {
         <div class="customer-item">
@@ -7,7 +17,7 @@
             <li><b>Customer Age :</b> {{cust.age}}</li>
             <li><b>Customer Mobile Number :</b> {{cust.mobile}}</li>
             <div class="button-container">
-                <button class="update-btn">Update Customer</button>
+                <button class="update-btn" (click)="selectCustomer(cust.id)">select to Update Customer</button>
                 <button class="delete-btn" (click)="deleteCustomer(cust.id)">Delete</button>
             </div>
         </div>
